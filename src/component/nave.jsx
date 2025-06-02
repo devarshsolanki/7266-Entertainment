@@ -22,9 +22,9 @@ const Nave = () => {
   return (
     <div id="home">
       {/* Top Image */}
-      <div className="flex justify-center bg-[#0e2444] ">
+{/*       <div className="flex justify-center bg-[#0e2444] ">
         <img src="../rlogo.png" alt="Top Image" className="max-w-full h-auto" />
-      </div>
+      </div> */}
 
       {/* Navigation Bar */}
       <nav
