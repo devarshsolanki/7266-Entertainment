@@ -91,7 +91,7 @@ const Gear = () => {
         '2ft High Stage.',
         'Different sizes available, 4ft by 4ft panels.',
       ],
-      img:'Stage.webp',
+      img:'/stage.jpg',
     },
   ];
 

@@ -85,13 +85,15 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center p-5 sm:p-20 bg-[#1a1244]">
+    <div className="flex flex-col items-center p-10 mt-5 sm:p-20 bg-[#1a1244]">
+
+      <div className='pt-10'>
+        <img src="./rlogo.png" alt=""  className=' sm:h-40  object-cover object-center' />
+      </div>
       {/* Company Information Section */}
       <section className="text-left sm:text-center">
-        <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-[#A86523]">
-          7266 Entertainment Solutions
-        </h1>
-        <p className="text-lg sm:text-2xl text-[#eeebeb] pt-5 sm:pt-10 text-justify sm:pl-10 sm:pr-10">
+
+        <p className="text-lg sm:text-2xl text-[#eeebeb] pt-5 sm:pt-10 text-justify sm:pl-20 sm:pr-20">
           Welcome to 7266 Entertainment Solutions, situated in Winnipeg, MB, Canada.
         </p>
         <p className="text-lg sm:text-2xl text-[#eeebeb] pt-5 text-justify sm:pl-20 sm:pr-20">
@@ -111,7 +113,7 @@ const Home = () => {
             />
             <button
               ref={(el) => (buttonRefs.current[index] = el)}
-              className="mt-4 px-4 py-2 text-[#ffffff] font-bold rounded hover:bg-[#e0c4b0] transition-all"
+              className="mt-4 px-4 py-2 text-[#ffffff] font-bold rounded hover:bg-[#A86523] transition-all"
             >
               {item.text}
             </button>

@@ -22,17 +22,13 @@ const Nave = () => {
   return (
     <div id="home">
       {/* Top Image */}
-      <div className="flex justify-center bg-[#0e2444] ">
+      {/* <div className="flex justify-center bg-[#0e2444] ">
         <img src="../rlogo.png" alt="Top Image" className="max-w-full h-auto" />
-      </div>
+      </div> */}
 
       {/* Navigation Bar */}
       <nav
-        className={`${
-          isSticky
-            ? "fixed top-0 left-0 w-full bg-[#1c1236] shadow-md transition-all duration-300 ease-out"
-            : "relative bg-[#1c1236] transition-all duration-300 ease-in-out"
-        } text-[#F5F5F5] flex justify-between items-center px-6 py-4 z-500`}
+        className="fixed top-0 left-0 w-full bg-[#1c1236] text-[#F5F5F5] flex justify-between items-center px-6 py-4 z-500"
       >
         {/* Left Side: Logo */}
         <div className="text-[#00CFFF] text-2xl font-bold">
@@ -71,42 +67,43 @@ const Nave = () => {
           <a
             href="#home"
             onClick={() => setIsMenuOpen(false)} // Close menu on click
-            className="block text-[#F5F5F5] hover:text-[#A86523] transition duration-300 font-medium"
+            className="block text-[#F5F5F5] hover:text-[#A86523] px-4 transition duration-300 font-medium"
           >
             Home
           </a>
           <a
             href="#gear"
             onClick={() => setIsMenuOpen(false)} // Close menu on click
-            className="block text-[#F5F5F5] hover:text-[#A86523] transition duration-300 font-medium"
+            className="block text-[#F5F5F5] hover:text-[#A86523] px-4 transition duration-300 font-medium"
           >
             Gear
           </a>
           <a
             href="#packages"
             onClick={() => setIsMenuOpen(false)} // Close menu on click
-            className="block text-[#F5F5F5] hover:text-[#A86523] transition duration-300 font-medium"
+            className="block text-[#F5F5F5] hover:text-[#A86523] px-4 transition duration-300 font-medium"
           >
             Packages
           </a>
           <a
             href="#contact"
             onClick={() => setIsMenuOpen(false)} // Close menu on click
-            className="block text-[#F5F5F5] hover:text-[#A86523] transition duration-300 font-medium"
+            className="block text-[#F5F5F5] hover:text-[#A86523] px-4 transition duration-300 font-medium"
           >
             Contact
           </a>
-        </div>
+        
 
         {/* Right Side: Call to Action */}
-        <div className="hidden md:flex items-center space-x-2 ml-8">
+        
           <a
             href="tel:+1 4314587266"
-            className="bg-[#A86523] text-white px-4 py-2 rounded-lg hover:bg-[#8a4e1c] transition duration-300"
+            className="text-[#A86523] sm:bg-[#A86523] text-white px-4 py-2 rounded-lg sm:hover:bg-[#8a4e1c] transition duration-300"
           >
             Call Us
           </a>
         </div>
+        
       </nav>
     </div>
   );
